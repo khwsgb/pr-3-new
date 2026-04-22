@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - CodeLearn</title>
+    <link rel="stylesheet" href="stylepr33.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CodeLearn</div>
+                <nav class="nav">
+                    <a href="indexpr33.html">Главная</a>
+                    <a href="profile.html">Профиль</a>
+                    <a href="login.html" class="btn-login">Выйти</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <h1>Личный кабинет</h1>
+            
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img src="https://via.placeholder.com/100/2563EB/FFFFFF?text=ПА" alt="Avatar" class="profile-avatar">
+                        <h2>Панов А.С.</h2>
+                        <p class="profile-email">panov@example.com</p>
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-label">Курса</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Уроков пройдено</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">85%</span>
+                            <span class="stat-label">Прогресс</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Мои курсы</h3>
+                    <div class="my-courses">
+                        <div class="course-progress">
+                            <div class="course-progress-header">
+                                <span>Python для начинающих</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="course-progress">
+                            <div class="course-progress-header">
+                                <span>HTML & CSS</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%; background: var(--success)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Достижения</h3>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <span class="achievement-icon">🏆</span>
+                            <div>
+                                <strong>Первые шаги</strong>
+                                <p>Пройден первый урок</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-icon">⭐</span>
+                            <div>
+                                <strong>Курс завершен</strong>
+                                <p>HTML & CSS пройден</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 CodeLearn. Практическая 2 Панов А.С.</p>
+        </div>
+    </footer>
+</body>
+</html>

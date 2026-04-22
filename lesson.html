@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 1 - CodeLearn</title>
+    <link rel="stylesheet" href="stylepr33.css">
+    <style>
+        .lesson-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px 0;
+            min-height: calc(100vh - 200px);
+        }
+        .theory-block {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .code-editor-block {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .code-editor {
+            background: #1E293B;
+            color: #F8FAFC;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            min-height: 200px;
+            margin: 15px 0;
+            resize: vertical;
+            width: 100%;
+            border: none;
+            font-size: 14px;
+        }
+        .output-block {
+            background: #F1F5F9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            min-height: 100px;
+        }
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .lesson-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CodeLearn</div>
+                <nav class="nav">
+                    <a href="indexpr33.html">Главная</a>
+                    <a href="course.html">Курс</a>
+                    <a href="profile.html">Профиль</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="lesson-container">
+            <div class="theory-block">
+                <h2>Урок 1: Введение в Python</h2>
+                <h3>Ваша первая программа</h3>
+                <p>Python — это мощный и простой в изучении язык программирования. Давайте напишем вашу первую программу!</p>
+                
+                <h4>Теория:</h4>
+                <p>Функция <code>print()</code> выводит текст на экран. Текст нужно заключать в кавычки:</p>
+                
+                <div class="code-example">
+                    <pre>print("Привет, мир!")</pre>
+                </div>
+
+                <h4>Задание:</h4>
+                <p>Напишите программу, которая выводит текст "Hello, Python!"</p>
+
+                <div class="lesson-nav">
+                    <a href="course.html" class="btn-secondary">← Назад к курсу</a>
+                    <button class="btn-primary" onclick="checkCode()">Проверить код</button>
+                </div>
+            </div>
+
+            <div class="code-editor-block">
+                <h3>Редактор кода</h3>
+                <p>Напишите ваш код ниже:</p>
+                <textarea class="code-editor" id="codeEditor" placeholder="Введите код здесь..."></textarea>
+                
+                <h4>Результат:</h4>
+                <div class="output-block" id="output">
+                    Результат выполнения появится здесь...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 CodeLearn. Практическая 2 Панов А.С.</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkCode() {
+            const code = document.getElementById('codeEditor').value;
+            const output = document.getElementById('output');
+            
+            if (code.includes('print("Hello, Python!")') || code.includes("print('Hello, Python!')")) {
+                output.innerHTML = '<span style="color: #10B981;">Правильно! Hello, Python!</span>';
+            } else {
+                output.innerHTML = '<span style="color: #EF4444;">Попробуйте еще раз. Используйте print("Hello, Python!")</span>';
+            }
+        }
+    </script>
+</body>
+</html>

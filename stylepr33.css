@@ -1,0 +1,376 @@
+/* Дополнительные стили для новых страниц */
+
+/* Страница курса */
+.course-detail {
+    padding: 40px 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.course-description h2 {
+    margin-bottom: 20px;
+}
+
+.course-topics {
+    list-style: none;
+    padding: 0;
+}
+
+.course-topics li {
+    padding: 10px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.course-topics li:before {
+    content: "✓ ";
+    color: var(--success);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.lessons-list {
+    margin-top: 30px;
+}
+
+.lesson-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.lesson-number {
+    font-weight: 600;
+    color: var(--primary);
+    margin-right: 15px;
+    min-width: 80px;
+}
+
+.lesson-title {
+    flex: 1;
+}
+
+.lesson-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.lesson-status.locked {
+    background: #E2E8F0;
+    color: var(--text-secondary);
+}
+
+.course-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-card {
+    background: var(--white);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.course-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Страница профиля */
+.profile-section {
+    padding: 40px 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.profile-card {
+    background: var(--white);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-email {
+    color: var(--text-secondary);
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.course-progress {
+    margin-bottom: 20px;
+}
+
+.course-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #E2E8F0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.achievement-icon {
+    font-size: 32px;
+}
+
+/* Страница авторизации */
+.auth-section {
+    padding: 60px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.auth-card {
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--primary);
+}
+
+/* Страница сообщества */
+.community-section {
+    padding: 40px 0;
+}
+
+.section-description {
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.topics-list {
+    background: var(--white);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.topic-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.topic-item:last-child {
+    border-bottom: none;
+}
+
+.topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topic-header h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.topic-category {
+    background: #DBEAFE;
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.topic-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #F1F5F9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Адаптивность для новых страниц */
+@media (max-width: 768px) {
+    .course-info,
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-sidebar {
+        position: static;
+    }
+    
+    .profile-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .lesson-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* Дополнительные кнопки */
+.btn-secondary {
+    display: inline-block;
+    background: var(--text-secondary);
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background: #475569;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.code-example {
+    background: #1E293B;
+    color: #F8FAFC;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.code-example pre {
+    margin: 0;
+}
