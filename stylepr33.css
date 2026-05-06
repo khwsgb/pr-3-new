@@ -321,10 +321,12 @@
 
 /* Адаптивность для новых страниц */
 @media (max-width: 768px) {
-    .course-info,
-    .community-grid {
-        grid-template-columns: 1fr;
-    }
+    .course-info {
+    grid-template-columns: 1fr;
+}
+.community-grid {
+    grid-template-columns: 1fr;
+}
     
     .course-sidebar {
         position: static;
