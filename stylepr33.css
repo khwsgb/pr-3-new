@@ -321,9 +321,7 @@
 
 /* Адаптивность для новых страниц */
 @media (max-width: 768px) {
-    .course-info {
-    grid-template-columns: 1fr;
-}
+.course-info,
 .community-grid {
     grid-template-columns: 1fr;
 }
